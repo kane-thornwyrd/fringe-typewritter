@@ -1,0 +1,27 @@
+{
+  "name": "fringe-typewritter",
+  "version": "1.0.0",
+  "description": "a typewritter everyone can write on.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --config .nodemonrc.json --exec npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kane-thornwyrd/fringe-typewritter.git"
+  },
+  "author": "Jean-cédric Thérond <jean.cedric.t@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kane-thornwyrd/fringe-typewritter/issues"
+  },
+  "homepage": "https://github.com/kane-thornwyrd/fringe-typewritter#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}
