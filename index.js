@@ -37,8 +37,10 @@ const server = http.createServer((req, res) => {
 
     req.on('end', function () {
       const newText = `\n${urldecode(body.split('newcontent=')[1])}`;
-      content += newText;
-      appendFile('paper.txt', newText, 'utf8', err => err && console.log(err) );
+      if(newText.trim()) {
+        content += newText;
+        appendFile('paper.txt', newText, 'utf8', err => err && console.log(err) );
+      }
     });
 
     res.writeHead(302, {'Location': '/'});
